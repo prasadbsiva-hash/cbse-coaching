@@ -5,6 +5,9 @@ body {
     padding: 0;
     background: #f4f4f4;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -14,10 +17,26 @@ header {
     text-align: center;
 }
 
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
 main {
     padding: 1rem;
     margin: auto;
     max-width: 800px;
+    flex: 1;
 }
 
 footer {
@@ -25,7 +44,4 @@ footer {
     padding: 1rem;
     background: #333;
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }

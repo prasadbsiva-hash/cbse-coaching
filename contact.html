@@ -10,11 +10,14 @@
     <header>
         <h1 id="app-name-header">EduQuest</h1>
         <nav>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="courses.html">Courses</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li id="login-link"><a href="login.html">Login</a></li>
+                <li id="signup-link"><a href="signup.html">Sign Up</a></li>
+                <li id="logout-link" class="hidden"><button id="logout-button">Logout</button></li>
             </ul>
         </nav>
     </header>
@@ -25,6 +28,8 @@
     <footer>
         <p>&copy; 2025 <span id="app-name-footer">EduQuest</span></p>
     </footer>
-    <script src="script.js"></script>
+    <script src="firebase-init.js" type="module"></script>
+    <script src="auth.js" type="module"></script>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
